@@ -14,7 +14,7 @@
 } */
 .item-producto {
   width: 28%;
-  height: 945px;
+  height: 890px;
   display: flex;
   flex-direction: column;
   border: 1px solid white;
@@ -40,4 +40,13 @@
 }
 .item-producto .title{
 margin: 0 0 15px 0;
+}
+
+.icon{
+    margin: -12px 0 11px 0;
+    font-size: 23px;
+    border: 5px solid;
+    padding: 12px;
+    border-radius: 45px;
+    color: orange;
 }

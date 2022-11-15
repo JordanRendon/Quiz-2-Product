@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {faBagShopping} from '@fortawesome/free-solid-svg-icons'
 import axios from 'axios';
 import './ApiFakestore.css'
 
@@ -19,6 +21,7 @@ const ApiFakestore = () => {
         {/* <div className='container-productos'> */}
             {productos.map((producto)=>(
                 <div key={producto.id} className='item-producto'>
+                    <FontAwesomeIcon icon={faBagShopping} className='icon'/>
                     <h2 className='title'>{producto.title}</h2>
                     <img src={producto.image} alt="" />
                     <p>{producto.description}</p>
